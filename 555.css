@@ -1,0 +1,30 @@
+.grid {
+  display: grid;
+  grid-template-columns: 300px auto;
+  grid-template-rows: 100px minmax(250px, auto) 200px;
+  grid-template-areas:
+    "header header"
+    "leftbar main"
+    "footer footer";
+  gap: 10px;
+}
+
+.page-header {
+  grid-area: header;
+  background: lightblue;
+}
+
+.page-leftbar {
+  grid-area: leftbar;
+  background: lightgreen;
+}
+
+.page-main {
+  grid-area: main;
+  background: lightyellow;
+}
+
+.page-footer {
+  grid-area: footer;
+  background: lightgray;
+}
